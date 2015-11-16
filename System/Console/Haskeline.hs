@@ -34,7 +34,7 @@ module System.Console.Haskeline(
                     haveTerminalUI,
                     mapInputT,
                     -- ** Behaviors
-                    Behavior,
+                    Behavior(..),
                     runInputTBehavior,
                     defaultBehavior,
                     useFileHandle,
@@ -73,8 +73,10 @@ module System.Console.Haskeline(
                     handleInterrupt,
                     -- * Additional submodules
                     module System.Console.Haskeline.Completion,
-                    module System.Console.Haskeline.MonadException)
-                     where
+                    module System.Console.Haskeline.MonadException,
+                    -- * Additional submodules for custom backends
+                    module System.Console.Haskeline.Term
+                    ) where
 
 import System.Console.Haskeline.LineState
 import System.Console.Haskeline.Command
