@@ -75,7 +75,8 @@ module System.Console.Haskeline(
                     module System.Console.Haskeline.Completion,
                     module System.Console.Haskeline.MonadException,
                     -- * Additional submodules for custom backends
-                    module System.Console.Haskeline.Term
+                    module System.Console.Haskeline.Term,
+                    MaybeT(..)
                     ) where
 
 import System.Console.Haskeline.LineState
